@@ -5,6 +5,6 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "FrontendMentor.io---Bookmark-landing-page",
+  base: "/FrontendMentor.io---Bookmark-landing-page/",
   plugins: [react(),tailwindcss(), tsconfigPaths()],
 })
