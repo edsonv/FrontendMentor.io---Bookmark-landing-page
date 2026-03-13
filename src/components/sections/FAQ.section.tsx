@@ -4,7 +4,7 @@ import { Button } from '../Button'
 
 const FAQ = () => {
   return (
-    <section className='mx-4 md:mx-14.25 lg:mx-56 mb-16 md:mb-19.5 lg:mb-22.5'>
+    <section className='mx-4 md:mx-14.25 xl:mx-56 mb-16 md:mb-19.5 xl:mb-22.5'>
       <div className='flex flex-col gap-2 mb-4.5'>
         <h2 className='text-preset-1 md:text-preset-2 text-blue-950 text-center'>Frequently Asked Questions</h2>
         <p className='text-center text-preset-2-mobile-regular md:text-preset-4 text-blue-950/50'>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</p>

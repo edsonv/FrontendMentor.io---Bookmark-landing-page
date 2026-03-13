@@ -19,19 +19,19 @@ const TabItem = ({onClickHandler, feature,isActive, index}: {onClickHandler: () 
 }
 
 const TabContent = ({feature}: {feature: Feature})=>{
-  return <div className='-mt-0.25 lg:-mt-4 px-3.75 lg:grid lg:grid-cols-2 lg:items-center'>
-          <div className='relative mt-5.5 lg:mt-11 mb-8.5 md:mb-18.75 md:flex md:justify-end'>
-            <img src={feature.image} alt="" className='p-0.25 md:px-0 md:width-[76%] md:mr-4 lg:mr-2'/>
+  return <div className='-mt-0.25 xl:-mt-4 px-3.75 xl:grid xl:grid-cols-2 xl:items-center'>
+          <div className='relative mt-5.5 xl:mt-11 mb-8.5 md:mb-18.75 md:flex md:justify-end'>
+            <img src={feature.image} alt="" className='p-0.25 md:px-0 md:width-[76%] md:mr-4 xl:mr-2'/>
             <BgPill direction="left" />
           </div>
-          <div className='flex flex-col items-center lg:items-start lg:self-start gap-2 md:gap-3 lg:ml-13 lg:mt-20.25'>
-            <h2 className="text-preset-1 md:text-preset-2 text-blue-950 text-center lg:text-left max-w-[10ch] md:max-w-none">
+          <div className='flex flex-col items-center xl:items-start xl:self-start gap-2 md:gap-3 xl:ml-13 xl:mt-20.25'>
+            <h2 className="text-preset-1 md:text-preset-2 text-blue-950 text-center xl:text-left max-w-[10ch] md:max-w-none">
               {feature.title}
             </h2>
-            <p className="text-center lg:text-left text-preset-2-mobile-regular md:text-preset-4 text-blue-950/50 md:max-w-[40ch]">
+            <p className="text-center xl:text-left text-preset-2-mobile-regular md:text-preset-4 text-blue-950/50 md:max-w-[40ch]">
               {feature.description}
             </p>
-        <div className='flex items-center justify-center mt-2 md:mt-3 lg:mt-0'>
+        <div className='flex items-center justify-center mt-2 md:mt-3 xl:mt-0'>
             <Button className="py-1 px-2.75 text-preset-2-mobile-medium">More Info</Button>
           </div>
         </div>
@@ -43,7 +43,7 @@ export const Tabs = ({features}:TabsProps<Feature>) => {
 
   return (
     <>
-      <ul className='px-3.75 md:px-10 lg:mx-34 mt-4 md:mt-6 flex flex-col md:flex-row mb-1.75'>
+      <ul className='px-3.75 md:px-10 xl:mx-34 mt-4 md:mt-6 flex flex-col md:flex-row mb-1.75'>
           {features.map((f, index) => (
             <TabItem key={f.label} onClickHandler={() => setActiveTab(features[index])} feature={f} isActive={activeTab.label === f.label} index={index}/>
           ))}

@@ -14,7 +14,7 @@ const Subscribe = () => {
   })
 
   return (
-    <section className='bg-blue-600 px-4 md:px-[163px] lg:px-63 py-6 md:pt-7 md:pb-9.75 flex flex-col gap-4.25 md:gap-3.75'>
+    <section className='bg-blue-600 px-4 md:px-[163px] xl:px-63 py-6 md:pt-7 md:pb-9.75 flex flex-col gap-4.25 md:gap-3.75'>
       <div className='flex flex-col items-center md:gap-3'>
         <span className='text-white text-preset-3 md:text-preset-6-semibold uppercase text-center'>35,000+ already joined</span>
         <h2 className='text-white text-preset-1 md:text-preset-2 text-center'>Stay up-to-date with what we’re doing</h2>
