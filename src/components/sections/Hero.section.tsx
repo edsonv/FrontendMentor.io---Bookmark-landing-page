@@ -1,3 +1,4 @@
+import IllustrationHero from '@/assets/illustration-hero.svg'
 import { BgPill } from '../BgPill'
 import { Button } from '../Button'
 
@@ -5,7 +6,7 @@ const Hero = () => {
   return (
     <section className='mb-16 md:mb-15.5 xl:mb-9.75 xl:pb-5 max-w-[100vw] overflow-hidden xl:grid xl:grid-cols-2 xl:pl-[165px] xl:items-center'>
           <div className='relative mb-5.5 md:mb-10.75 xl:mb-1 md:px-5.75 xl:px-0 xl:order-2'>
-            <img src="/illustration-hero.svg" alt="" className="p-1.5 xl:p-0 xl:-ml-[70px]" />
+            <img src={IllustrationHero} alt="" className="p-1.5 xl:p-0 xl:-ml-8.75" />
             <BgPill />
           </div>
 

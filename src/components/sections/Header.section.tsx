@@ -1,7 +1,13 @@
+import IconClose from '@/assets/icon-close.svg'
+import IconHamburger from '@/assets/icon-hamburger.svg'
+import LogoBookmarkAllWhite from '@/assets/logo-bookmark-all-white.svg'
+import LogoBookmark from '@/assets/logo-bookmark.svg'
 import { navLinks } from '@/constants/nav-links.constants'
 import cn from "clsx"
 import { useEffect, useState } from 'react'
 import { Button } from '../Button'
+
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,10 +23,10 @@ const Header = () => {
   return (
     <header className={cn('mb-3 xl:mb-7', isMenuOpen && 'fixed top-0 h-full w-full bg-blue-950/95 py-5 px-4 md:px-10 z-10 overscroll-contain scroll-y-0')}>
         <div className={cn('flex justify-between xl:items-center', !isMenuOpen ? 'py-5 px-4 md:px-10 xl:px-21 xl:py-3.5': 'mb-5')}>
-          <a href="#"><img src={isMenuOpen ? "/logo-bookmark-all-white.svg" : "/logo-bookmark.svg"} alt="" /></a>
+          <a href="#"><img src={isMenuOpen ? LogoBookmarkAllWhite : LogoBookmark} alt="" /></a>
 
-          <Button variant="icon" onClick={() => setIsMenuOpen(!isMenuOpen)} className='xl:hidden'>
-            <img src={isMenuOpen ? "/icon-close.svg" : "/icon-hamburger.svg"} alt="" />
+          <Button variant="icon" type='button' onClick={() => setIsMenuOpen(!isMenuOpen)} className='xl:hidden'>
+            <img src={isMenuOpen ? IconClose: IconHamburger} alt="" />
           </Button>
 
           <nav className='hidden xl:block'>

@@ -1,18 +1,21 @@
+import LogoChrome from '@/assets/logo-chrome.svg';
+import LogoFirefox from '@/assets/logo-firefox.svg';
+import LogoOpera from '@/assets/logo-opera.svg';
 import type { Card } from '@/types/card.type';
 
 export const cards: Card[] = [
   {
-    imageUrl: "/logo-chrome.svg",
+    imageUrl: LogoChrome,
     title: "Chrome",
     version: 62,
   },
   {
-    imageUrl: "/logo-firefox.svg",
+    imageUrl: LogoFirefox,
     title: "Firefox",
     version: 55,
   },
   {
-    imageUrl: "/logo-opera.svg",
+    imageUrl: LogoOpera,
     title: "Opera",
     version: 46,
   },

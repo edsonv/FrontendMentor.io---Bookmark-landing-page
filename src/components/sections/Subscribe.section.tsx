@@ -1,3 +1,4 @@
+import IconError from '@/assets/icon-error.svg'
 import { zodResolver } from '@hookform/resolvers/zod'
 import cn from 'clsx'
 import { useForm } from 'react-hook-form'
@@ -23,7 +24,7 @@ const Subscribe = () => {
         <div className={cn("rounded-[5px] md:flex-1",errors.email && 'bg-red-400 border-3 border-red-400')}>
           <div className='relative'>
           <input className='bg-white rounded-[5px] w-full px-2 md:px-3 py-1.25 md:py-1.25 text-preset-2-mobile-regular md:text-preset-6' type="email" placeholder='Enter your email address' {...register('email')} aria-invalid={errors.email ? "true" : "false"}/>
-          {errors.email && <img src="/icon-error.svg" alt="" className='absolute top-[50%] -translate-y-[50%] right-1.75'/>}
+          {errors.email && <img src={IconError} alt="" className='absolute top-[50%] -translate-y-[50%] right-1.75'/>}
           </div>
           {errors.email && <p className='bg-red-400 text-preset-4 md:text-preset-7 text-white px-1.5 py-0.25'>Whoops, make sure it's an email</p>}
         </div>
